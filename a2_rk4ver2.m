@@ -54,18 +54,34 @@ end
 % Call functions that run the Analysis Tasks
 
 % Task 1
+disp(['Task 1:'])
+disp(' ')
+
 % Task 2
+disp(['Task 2:'])
+disp(' ')
+
 % Task 3
-[accel_max, accel_max_t] = maxacceleration(v, t, h, n)
+[accel_max, accel_max_t] = maxacceleration(v, t, h, n);
+disp(['Task 3: The max acceleration is ' num2str(accel_max*-1) ' m/s^2 and occurs at ' num2str(accel_max_t) ' s after the jump'])
+disp(' ')
 
 % Task 4
-distance = integration_simprule (v, h, n)
+distance = integration_simprule (v, h, n);
+disp(['Task 4: The total distance travelled during the 60 second jump is ' num2str(distance) ' m'])
+disp(' ')
 
 % Task 5
-camera_time = task5_camera(y, t)
+camera_time = task5_camera(y, t);
+disp(['Task 5: To take a photo of the jumper, the camera should be set to trigger at ' num2str(camera_time) ' s after the jump'])
+disp(' ')
 
 % Task 6
-[dis_from_water_original_jump, dis_from_water_mod_jump, new_k, new_L, max_accel] = modified_bungee(y, t)
+[dis_from_water_original_jump, dis_from_water_mod_jump, new_k, new_L, max_accel] = modified_bungee(y, t);
+disp(['Task 6: Originally, at max displacement from the jump point the jumper misses the water by ' num2str(dis_from_water_original_jump) ' m.'])
+disp(['But with the length of the rope modified to ' num2str(new_L) ' m, and its spring constant to ' num2str(new_k) ' N/m,'])
+disp(['The jumper now touches the water, reaching ' num2str(dis_from_water_mod_jump*-1) ' m into it.'])
+disp(['The max acceleration of the jumper also remains just under 2g, with it reaching up to ' num2str(max_accel) ' m/s^2'])
 
 %%
 %Other figures
