@@ -34,7 +34,7 @@ y(1) = alpha;
 v = zeros(size(t));
 v(1) = alpha;
 
-% perform iterations
+% Perform iterations for numerical method, solving ODE's
 for j = 1:n
     % for dy/dt
     m1 = h * f1(v(j));
@@ -56,6 +56,8 @@ end
 % Task 1
 % Task 2
 % Task 3
+[max_acceleration, max_acceleration_t] = acceleration2ndorder(v, t, h, n)
+
 % Task 4
 % Task 5
 camera_time = task5_camera(y, t)
