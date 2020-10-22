@@ -65,7 +65,7 @@ distance = integration_simprule (v, h, n)
 camera_time = task5_camera(y, t)
 
 % Task 6
-
+[dis_from_water_original_jump, dis_from_water_mod_jump, new_k, new_L, max_accel] = modified_bungee(y, t)
 
 %%
 %Other figures
