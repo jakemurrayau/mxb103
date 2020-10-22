@@ -10,6 +10,8 @@ function y = forward_eval(X, T, x)
 h = X(2)-X(1);
 s = (x - X(1)) / h;
 
+n = length(X);
+
 y = zeros(size(x));         % Initialise sum
 for k = 1:n
     C = 1/factorial(k-1);   % Initialise product of binomial coefficients
