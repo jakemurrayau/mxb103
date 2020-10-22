@@ -56,13 +56,28 @@ end
 % Task 1
 % Task 2
 % Task 3
-[max_acceleration, max_acceleration_t] = acceleration2ndorder(v, t, h, n)
+[accel_max, accel_max_t] = maxacceleration(v, t, h, n)
 
 % Task 4
+distance = integration_simprule (v, h, n)
+
 % Task 5
 camera_time = task5_camera(y, t)
 
 % Task 6
 
 
+%%
+%Other figures
 
+%Figure 3.2: plot position of jumper over time 
+figure, plot(t, y)
+xlabel('Time (s)')
+ylabel('Position/Displacement (m)')
+title('Position of bungee jumper over time')
+
+%Figure 4.4.1: plot figure of absolute value function velocity 
+figure, plot(t, abs(v)),
+xlabel('Time (s)')
+ylabel('Velocity (m/s)')
+title('Absolute value of velocity over time')
