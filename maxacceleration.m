@@ -1,9 +1,9 @@
 function [accel_max, accel_max_time] = maxacceleration(v, t, h, n)
-%ACCELERATION2NDORDER Gets the max acceleration experienced by the jumper
-% [abs_accel_max, accel_max_time] = acceleration2ndorder(v, t, h, n)
-% returns the absolute max acceleration experienced by the person during
-% the bungee jump and the time in seconds at which this occurs, found from
-% numerical differentiation of the velocity array (v)
+%MAXACCELERATION Gets the max acceleration experienced by the jumper
+% [abs_accel_max, accel_max_time] = maxacceleration(v, t, h, n) returns the
+% absolute max acceleration experienced by the person during the bungee 
+% jump and the time in seconds at which this occurs, found from numerical 
+% differentiation of the velocity array (v)
 
 accel = zeros(size(t));
 
