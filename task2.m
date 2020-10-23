@@ -3,9 +3,11 @@ function task2 (t,v)
 % factor". The graph below describes the velocity over the time of 60 seconds, starting from the point the
 % jumper falls.
 
-plot(t, v);
 xlabel('seconds');
 ylabel('velocity');
 [maxV, num] = max(v); 
-fprintf('Max velocity %.2fm/s at %.2f seconds\n', maxV, t(num));
+fprintf('Task 2:\nMax velocity %.2fm/s at %.2f seconds\n', maxV, t(num));
+plot(t,v)
+hold on
+plot(t(num), maxV, 'r*')
 end

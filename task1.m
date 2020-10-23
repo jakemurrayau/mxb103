@@ -7,5 +7,5 @@ for i = 2:j
         bounces = bounces + 1;
     end
 end
-    fprintf('\n%d bounces were completed within 60 seconds',bounces);
+    fprintf('Task 1:\n%d bounces were completed within 60 seconds \n',bounces);
 end
