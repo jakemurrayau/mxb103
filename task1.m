@@ -1,11 +1,11 @@
-function task1(j,y)
+function[bounces] = task1(n,y)
 
 bounces = 0; %Create counter for every bounce within 60 seconds
 
-for i = 2:j
+for i = 2:n
     if(y(i) > y(i+1) && y(i) > y(i-1)) %If statement that counts every bounce
         bounces = bounces + 1;
     end
 end
-    fprintf('Task 1:\n%d bounces were completed within 60 seconds \n',bounces);
+
 end
